@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "767719814458",
+    "project_id": "facetrack-attendance-fd111",
+    "storage_bucket": "facetrack-attendance-fd111.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767719814458:android:e4d9a0e7a3954266354c03",
+        "android_client_info": {
+          "package_name": "com.facetrack.attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_HpkxhaQ9p4rZwqcz_f14PuyhhAvntXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
