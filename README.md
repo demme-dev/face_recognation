@@ -1,24 +1,24 @@
-# FaceTrack Attendance App
+# 📸 FaceTrack Attendance App
 
 ## Overview
-FaceTrack Attendance is a Kotlin-based Android application using MVVM architecture, CameraX, ML Kit, Firebase, and Room Database for a production-ready face recognition attendance system.
+FaceTrack Attendance is a Kotlin-based Android app built with MVVM architecture, CameraX, ML Kit, Firebase, and Room Database for a production-ready face recognition attendance system.
 
 ## Features
-- **Firebase Auth**: Secure login and signup.
-- **Face Registration**: Captures front, left, and right face views.
-- **Real-time Recognition**: Uses CameraX and ML Kit for face detection.
-- **Offline Support**: Room database stores attendance locally and syncs to Firestore when online.
-- **Admin View**: (Integrated in fragments) View all attendance records.
+- 🔐 Firebase Authentication for secure login and signup  
+- 🙂 Face registration (front, left, and right views)  
+- 📷 Real-time recognition using CameraX and ML Kit  
+- 📡 Offline support with Room database and Firestore sync  
+- 👨‍💼 Admin view to monitor attendance records  
 
 ## Firebase Setup Instructions
-1. Go to [Firebase Console](https://console.firebase.google.com/).
-2. Create a new project named `FaceTrack Attendance`.
-3. Add an Android App with package name `com.facetrack.attendance`.
-4. Download the `google-services.json` file and place it in the `app/` directory.
-5. Enable **Authentication** with Email/Password provider.
-6. Enable **Cloud Firestore** in test mode or with appropriate rules.
-7. Firestore Rules:
-   ```
+1. Go to the Firebase Console.  
+2. Create a project named **FaceTrack Attendance**.  
+3. Add an Android app with package name `com.facetrack.attendance`.  
+4. Download `google-services.json` and place it in the `app/` folder.  
+5. Enable **Email/Password Authentication**.  
+6. Enable **Cloud Firestore**.  
+7. Use the following Firestore rules:
+   ```js
    rules_version = '2';
    service cloud.firestore {
      match /databases/{database}/documents {
@@ -27,22 +27,18 @@ FaceTrack Attendance is a Kotlin-based Android application using MVVM architectu
        }
      }
    }
-   ```
-
-## Running the Project
-1. Open the project in the latest Android Studio.
-2. Ensure you have the `google-services.json` file in the `app/` folder.
-3. Sync Gradle.
-4. Run the app on a physical device (CameraX works best on real hardware).
-5. Grant Camera permission when prompted.
-6. Sign up, then go to the Attendance tab to register your face.
-7. Once registered, the app will automatically recognize you and mark attendance.
-
-## Tech Stack
-- **Language**: Kotlin
-- **Architecture**: MVVM + Repository Pattern
-- **UI**: XML / Material Design 3
-- **Camera**: CameraX
-- **Face Detection**: Google ML Kit
-- **Auth**: Firebase Auth
-- **Database**: Firestore (Cloud) & Room (Local)
+Running the Project
+Open the project in Android Studio.
+Ensure google-services.json is inside the app/ directory.
+Sync Gradle and run the app on a physical device.
+Grant camera permission.
+Sign up and register your face in the Attendance tab.
+The app will automatically recognize and mark attendance.
+Tech Stack
+💜 Kotlin
+🧩 MVVM + Repository Pattern
+🎨 Material Design 3 (XML UI)
+📷 CameraX
+🧠 Google ML Kit
+🔐 Firebase Auth
+☁️ Firestore & 💾 Room Database
